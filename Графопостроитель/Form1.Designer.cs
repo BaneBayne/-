@@ -64,6 +64,7 @@
             this.label8 = new System.Windows.Forms.Label();
             this.GridX = new System.Windows.Forms.TextBox();
             this.GridY = new System.Windows.Forms.TextBox();
+            this.label9 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.chart1)).BeginInit();
             this.panel1.SuspendLayout();
             this.tableLayoutPanel1.SuspendLayout();
@@ -507,12 +508,24 @@
             this.GridY.TabIndex = 14;
             this.GridY.TextChanged += new System.EventHandler(this.GridY_TextChanged);
             // 
+            // label9
+            // 
+            this.label9.AutoSize = true;
+            this.label9.BackColor = System.Drawing.SystemColors.Control;
+            this.label9.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F);
+            this.label9.Location = new System.Drawing.Point(450, 303);
+            this.label9.Name = "label9";
+            this.label9.Size = new System.Drawing.Size(90, 24);
+            this.label9.TabIndex = 3;
+            this.label9.Text = "Feo team";
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ActiveCaption;
             this.ClientSize = new System.Drawing.Size(903, 820);
+            this.Controls.Add(this.label9);
             this.Controls.Add(this.tableLayoutPanel2);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "Form1";
@@ -531,6 +544,7 @@
             this.tableLayoutPanel5.ResumeLayout(false);
             this.tableLayoutPanel5.PerformLayout();
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
@@ -569,6 +583,7 @@
         private System.Windows.Forms.Label label8;
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.TextBox GridX;
+        private System.Windows.Forms.Label label9;
     }
 }
 
