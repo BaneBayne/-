@@ -28,8 +28,8 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea11 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
-            System.Windows.Forms.DataVisualization.Charting.Series series11 = new System.Windows.Forms.DataVisualization.Charting.Series();
+            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea1 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
+            System.Windows.Forms.DataVisualization.Charting.Series series1 = new System.Windows.Forms.DataVisualization.Charting.Series();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
             this.chart1 = new System.Windows.Forms.DataVisualization.Charting.Chart();
             this.panel1 = new System.Windows.Forms.Panel();
@@ -40,6 +40,8 @@
             this.button3 = new System.Windows.Forms.Button();
             this.groupBox3 = new System.Windows.Forms.GroupBox();
             this.tableLayoutPanel3 = new System.Windows.Forms.TableLayoutPanel();
+            this.label4 = new System.Windows.Forms.Label();
+            this.label3 = new System.Windows.Forms.Label();
             this.GridY = new System.Windows.Forms.TextBox();
             this.label8 = new System.Windows.Forms.Label();
             this.label7 = new System.Windows.Forms.Label();
@@ -47,8 +49,6 @@
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.interX = new System.Windows.Forms.TextBox();
-            this.label3 = new System.Windows.Forms.Label();
-            this.label4 = new System.Windows.Forms.Label();
             this.Ytext = new System.Windows.Forms.TextBox();
             this.Xtext = new System.Windows.Forms.TextBox();
             this.checkBox1 = new System.Windows.Forms.CheckBox();
@@ -88,43 +88,45 @@
             // 
             // chart1
             // 
-            chartArea11.AlignmentOrientation = System.Windows.Forms.DataVisualization.Charting.AreaAlignmentOrientations.None;
-            chartArea11.AlignmentStyle = System.Windows.Forms.DataVisualization.Charting.AreaAlignmentStyles.None;
-            chartArea11.AxisX.Crossing = 0D;
-            chartArea11.AxisX.Enabled = System.Windows.Forms.DataVisualization.Charting.AxisEnabled.True;
-            chartArea11.AxisX.IsMarginVisible = false;
-            chartArea11.AxisX.MajorGrid.Interval = 0D;
-            chartArea11.AxisX.MajorGrid.IntervalOffset = 0D;
-            chartArea11.AxisX.MajorGrid.IntervalOffsetType = System.Windows.Forms.DataVisualization.Charting.DateTimeIntervalType.Auto;
-            chartArea11.AxisX.MajorGrid.LineColor = System.Drawing.Color.Gray;
-            chartArea11.AxisX.MajorTickMark.Enabled = false;
-            chartArea11.AxisX.MaximumAutoSize = 100F;
-            chartArea11.AxisX.ScrollBar.BackColor = System.Drawing.Color.LightGray;
-            chartArea11.AxisX.ScrollBar.ButtonColor = System.Drawing.Color.Silver;
-            chartArea11.AxisX.ScrollBar.LineColor = System.Drawing.Color.White;
-            chartArea11.AxisY.Crossing = 0D;
-            chartArea11.AxisY.Enabled = System.Windows.Forms.DataVisualization.Charting.AxisEnabled.True;
-            chartArea11.AxisY.IsMarginVisible = false;
-            chartArea11.AxisY.MajorGrid.Interval = 0D;
-            chartArea11.AxisY.MajorGrid.IntervalOffset = 0D;
-            chartArea11.AxisY.MajorGrid.IntervalOffsetType = System.Windows.Forms.DataVisualization.Charting.DateTimeIntervalType.Auto;
-            chartArea11.AxisY.MajorGrid.IntervalType = System.Windows.Forms.DataVisualization.Charting.DateTimeIntervalType.Auto;
-            chartArea11.AxisY.MajorGrid.LineColor = System.Drawing.Color.Gray;
-            chartArea11.AxisY.MajorTickMark.Enabled = false;
-            chartArea11.AxisY.ScrollBar.BackColor = System.Drawing.Color.LightGray;
-            chartArea11.AxisY.ScrollBar.ButtonColor = System.Drawing.Color.Silver;
-            chartArea11.AxisY.ScrollBar.LineColor = System.Drawing.Color.White;
-            chartArea11.Name = "ChartArea1";
-            this.chart1.ChartAreas.Add(chartArea11);
+            chartArea1.AlignmentOrientation = System.Windows.Forms.DataVisualization.Charting.AreaAlignmentOrientations.None;
+            chartArea1.AlignmentStyle = System.Windows.Forms.DataVisualization.Charting.AreaAlignmentStyles.None;
+            chartArea1.AxisX.Crossing = 0D;
+            chartArea1.AxisX.Enabled = System.Windows.Forms.DataVisualization.Charting.AxisEnabled.True;
+            chartArea1.AxisX.IsMarginVisible = false;
+            chartArea1.AxisX.MajorGrid.Interval = 0D;
+            chartArea1.AxisX.MajorGrid.IntervalOffset = 0D;
+            chartArea1.AxisX.MajorGrid.IntervalOffsetType = System.Windows.Forms.DataVisualization.Charting.DateTimeIntervalType.Auto;
+            chartArea1.AxisX.MajorGrid.LineColor = System.Drawing.Color.Gray;
+            chartArea1.AxisX.MajorTickMark.Enabled = false;
+            chartArea1.AxisX.MaximumAutoSize = 100F;
+            chartArea1.AxisX.ScrollBar.BackColor = System.Drawing.Color.LightGray;
+            chartArea1.AxisX.ScrollBar.ButtonColor = System.Drawing.Color.Silver;
+            chartArea1.AxisX.ScrollBar.LineColor = System.Drawing.Color.White;
+            chartArea1.AxisY.Crossing = 0D;
+            chartArea1.AxisY.Enabled = System.Windows.Forms.DataVisualization.Charting.AxisEnabled.True;
+            chartArea1.AxisY.IsMarginVisible = false;
+            chartArea1.AxisY.MajorGrid.Interval = 0D;
+            chartArea1.AxisY.MajorGrid.IntervalOffset = 0D;
+            chartArea1.AxisY.MajorGrid.IntervalOffsetType = System.Windows.Forms.DataVisualization.Charting.DateTimeIntervalType.Auto;
+            chartArea1.AxisY.MajorGrid.IntervalType = System.Windows.Forms.DataVisualization.Charting.DateTimeIntervalType.Auto;
+            chartArea1.AxisY.MajorGrid.LineColor = System.Drawing.Color.Gray;
+            chartArea1.AxisY.MajorTickMark.Enabled = false;
+            chartArea1.AxisY.ScrollBar.BackColor = System.Drawing.Color.LightGray;
+            chartArea1.AxisY.ScrollBar.ButtonColor = System.Drawing.Color.Silver;
+            chartArea1.AxisY.ScrollBar.LineColor = System.Drawing.Color.White;
+            chartArea1.Name = "ChartArea1";
+            this.chart1.ChartAreas.Add(chartArea1);
             this.chart1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.chart1.Location = new System.Drawing.Point(3, 3);
             this.chart1.Name = "chart1";
-            series11.BorderWidth = 3;
-            series11.ChartArea = "ChartArea1";
-            series11.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Line;
-            series11.Legend = "Legend1";
-            series11.Name = "Series1";
-            this.chart1.Series.Add(series11);
+            series1.BorderWidth = 3;
+            series1.ChartArea = "ChartArea1";
+            series1.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Line;
+            series1.Legend = "Legend1";
+            series1.MarkerSize = 8;
+            series1.MarkerStyle = System.Windows.Forms.DataVisualization.Charting.MarkerStyle.Circle;
+            series1.Name = "Series1";
+            this.chart1.Series.Add(series1);
             this.chart1.Size = new System.Drawing.Size(897, 609);
             this.chart1.TabIndex = 0;
             this.chart1.Text = "chart1";
@@ -254,6 +256,28 @@
             this.tableLayoutPanel3.Size = new System.Drawing.Size(287, 174);
             this.tableLayoutPanel3.TabIndex = 0;
             // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F);
+            this.label4.Location = new System.Drawing.Point(146, 47);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(138, 17);
+            this.label4.TabIndex = 8;
+            this.label4.Text = "Подпись Y";
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F);
+            this.label3.Location = new System.Drawing.Point(3, 47);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(137, 17);
+            this.label3.TabIndex = 7;
+            this.label3.Text = "Подпись X";
+            // 
             // GridY
             // 
             this.GridY.Dock = System.Windows.Forms.DockStyle.Fill;
@@ -328,28 +352,6 @@
             this.interX.Size = new System.Drawing.Size(137, 29);
             this.interX.TabIndex = 2;
             this.interX.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
-            // 
-            // label3
-            // 
-            this.label3.AutoSize = true;
-            this.label3.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F);
-            this.label3.Location = new System.Drawing.Point(3, 47);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(137, 17);
-            this.label3.TabIndex = 7;
-            this.label3.Text = "Подпись X";
-            // 
-            // label4
-            // 
-            this.label4.AutoSize = true;
-            this.label4.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F);
-            this.label4.Location = new System.Drawing.Point(146, 47);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(138, 17);
-            this.label4.TabIndex = 8;
-            this.label4.Text = "Подпись Y";
             // 
             // Ytext
             // 

@@ -55,14 +55,14 @@
     </dependentAssembly>
   </dependency>
   <dependency>
-    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="Графострой.exe" size="180688">
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="Графострой.exe" size="182224">
       <assemblyIdentity name="Графострой" version="1.0.0.0" language="neutral" processorArchitecture="msil" />
       <hash>
         <dsig:Transforms>
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-        <dsig:DigestValue>9QdNjHHMHGp2H1Fc0+ULg0w/+ml4IkOJPgChmthixfw=</dsig:DigestValue>
+        <dsig:DigestValue>ri4/ZbvuE5noLEXCzV5uJLzMOmOMkRZxVXMIvcua/rA=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>

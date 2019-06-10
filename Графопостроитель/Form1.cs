@@ -19,6 +19,8 @@ namespace Графопостроитель
             InitializeComponent();
         }
 
+        public string[] str;
+
         private void chart1_Click(object sender, EventArgs e)
         {
             chart1.Series[0].Points.AddXY(0, 1);
@@ -72,27 +74,90 @@ namespace Графопостроитель
         private void button4_Click(object sender, EventArgs e)
         {
             string data;
-            
+
             double XX, YY;
-            string u1, u2;
 
             if (Put.Text != "Обзор:")
             {
-                System.IO.StreamReader file = new System.IO.StreamReader(filename);
-
-                while ((data = file.ReadLine()) != null)
+                try
                 {
-                    int u = data.IndexOf(';');
-                    u1 = data.Substring(0, u);
-                    u2 = data.Substring(u + 1);
-                    XX = Convert.ToDouble(u1);
-                    YY = Convert.ToDouble(u2);
-                    chart1.Series[0].Points.AddXY(XX, YY);
-                }
+                    chart1.Series.Clear();
 
-                file.Close();
-            }
+                    System.IO.StreamReader file = new System.IO.StreamReader(filename);
+                    if ((data = file.ReadLine()) != null)
+                    {
+
+                        string[] str = data.Split(';');
+                        XX = Convert.ToDouble(str[0]);
+                        for (int i = 1; i < str.Length; i++)
+                        {
+                            chart1.Series.Add(i.ToString());
+                            //Markers
+                            /*if (marker == false)
+                            {
+                                chart1.Series[i - 1].MarkerSize = 8;
+                                chart1.Series[i - 1].MarkerStyle = System.Windows.Forms.DataVisualization.Charting.MarkerStyle.Circle;
+                            }
+                            else if (marker == true)
+                            {
+                                chart1.Series[i - 1].MarkerStyle = System.Windows.Forms.DataVisualization.Charting.MarkerStyle.None;
+                            }
+                            ////////*/
+
+                            //Chart settings
+                            chart1.Series[i - 1].BorderWidth = 5;
+                            chart1.Series[i - 1].ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Line; 
+                            //chart1.Series[i - 1].ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Spline; //Сплайн - со сглаживанием 
+
+                            YY = Convert.ToDouble(str[i]);
+                            chart1.Series[i - 1].Points.AddXY(XX, YY);
+                        }
+                    }
+
+                    while ((data = file.ReadLine()) != null)
+                    {
+                        string[] str = data.Split(';');
+                        if (((XXB.Text == "") && (YYB.Text == "") || ((XXB.Text != "") && (Convert.ToInt32(XXB.Text) > str.Length)) || ((YYB.Text != "") && (Convert.ToInt32(YYB.Text) > str.Length)))) //Если не указали, какие столбцы, или указали "фильм" 
+                        {
+                            XX = Convert.ToDouble(str[0]);
+                            for (int i = 1; i < str.Length; i++)
+                            {
+                                YY = Convert.ToDouble(str[i]);
+                                chart1.Series[i - 1].Points.AddXY(XX, YY);
+                            }
+                        }
+                        else if (YYB.Text == "")
+                        {
+                            XX = Convert.ToDouble(str[0]);
+                            YY = 0;
+                            int a = 0;
+                            for (int i = 0; i < str.Length; i++)
+                            {
+                                if (i == (Convert.ToInt32(XXB.Text) - 1)) XX = Convert.ToDouble(str[i]);
+                                else
+                                {
+                                    YY = Convert.ToDouble(str[i]);
+                                    chart1.Series[a++].Points.AddXY(XX, YY);
+                                }
+                            }
+                        }
+                        else
+                        {
+                            XX = Convert.ToDouble(str[(Convert.ToInt32(XXB.Text) - 1)]);
+                            YY = Convert.ToDouble(str[(Convert.ToInt32(YYB.Text) - 1)]);
+                            chart1.Series[0].Points.AddXY(XX, YY);
+                        }
+                    }
+
+                    file.Close();
+                }
+                catch (Exception exx)
+                {
+                    // Можно куда-нибудь "крякнуть" об ошибке, но это мелочи 
+                }
         }
+        
+    }
         //===========================================================================================
 
 
@@ -167,10 +232,30 @@ namespace Графопостроитель
 
                 grider = false;
             }
-        }
-        //===========================================================================================
 
-        //====================================== Подпись X и Y ======================================
+        }
+
+        /// <summary>
+        /// markers
+        /// </summary>
+        bool marker = false;
+        private void checkBox1_CheckedChanged(object sender, EventArgs e)
+        {
+            if (marker == false)
+            {
+                chart1.Series[0].MarkerSize = 8;
+                chart1.Series[0].MarkerStyle = System.Windows.Forms.DataVisualization.Charting.MarkerStyle.Circle;
+                marker = true;
+            }
+            else if (marker == true)
+            {
+                chart1.Series[0].MarkerStyle = System.Windows.Forms.DataVisualization.Charting.MarkerStyle.None;
+                marker = false;
+            }
+        }
+            //===========================================================================================
+
+            //====================================== Подпись X и Y ======================================
         private void Ytext_TextChanged(object sender, EventArgs e)
         {
             if (Ytext.Text == "")
