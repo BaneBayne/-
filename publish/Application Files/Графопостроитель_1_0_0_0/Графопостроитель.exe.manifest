@@ -1,0 +1,87 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<asmv1:assembly xsi:schemaLocation="urn:schemas-microsoft-com:asm.v1 assembly.adaptive.xsd" manifestVersion="1.0" xmlns:asmv1="urn:schemas-microsoft-com:asm.v1" xmlns="urn:schemas-microsoft-com:asm.v2" xmlns:asmv2="urn:schemas-microsoft-com:asm.v2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:co.v1="urn:schemas-microsoft-com:clickonce.v1" xmlns:asmv3="urn:schemas-microsoft-com:asm.v3" xmlns:dsig="http://www.w3.org/2000/09/xmldsig#" xmlns:co.v2="urn:schemas-microsoft-com:clickonce.v2">
+  <asmv1:assemblyIdentity name="Графопостроитель.exe" version="1.0.0.0" publicKeyToken="1b69d90a52063844" language="neutral" processorArchitecture="msil" type="win32" />
+  <description asmv2:iconFile="stocks-graphic-with-a-magnifier-tool_icon-icons.com_70602.ico" xmlns="urn:schemas-microsoft-com:asm.v1" />
+  <application />
+  <entryPoint>
+    <assemblyIdentity name="Графопостроитель" version="1.0.0.0" language="neutral" processorArchitecture="msil" />
+    <commandLine file="Графопостроитель.exe" parameters="" />
+  </entryPoint>
+  <trustInfo>
+    <security>
+      <applicationRequestMinimum>
+        <PermissionSet Unrestricted="true" ID="Custom" SameSite="site" />
+        <defaultAssemblyRequest permissionSetReference="Custom" />
+      </applicationRequestMinimum>
+      <requestedPrivileges xmlns="urn:schemas-microsoft-com:asm.v3">
+        <!--
+          Параметры манифеста UAC
+          При необходимости изменить уровень контроля учетных записей Windows замените узел 
+          requestedExecutionLevel одним из следующих значений.
+
+        <requestedExecutionLevel  level="asInvoker" uiAccess="false" />
+        <requestedExecutionLevel  level="requireAdministrator" uiAccess="false" />
+        <requestedExecutionLevel  level="highestAvailable" uiAccess="false" />
+
+         Если вы хотите использовать виртуализацию файлов и реестра для обратной 
+         совместимости, удалите узел requestedExecutionLevel.
+    -->
+        <requestedExecutionLevel level="asInvoker" uiAccess="false" />
+      </requestedPrivileges>
+    </security>
+  </trustInfo>
+  <dependency>
+    <dependentOS>
+      <osVersionInfo>
+        <os majorVersion="5" minorVersion="1" buildNumber="2600" servicePackMajor="0" />
+      </osVersionInfo>
+    </dependentOS>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="preRequisite" allowDelayedBinding="true">
+      <assemblyIdentity name="Microsoft.Windows.CommonLanguageRuntime" version="4.0.30319.0" />
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="ZedGraph.dll" size="291328">
+      <assemblyIdentity name="ZedGraph" version="5.1.15.35559" publicKeyToken="02A83CBD123FCD60" language="neutral" processorArchitecture="msil" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+        <dsig:DigestValue>2GYdZ3NFedltsircS8dOlAYl3UyB29wajvjYgt5GxKg=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="Графопостроитель.exe" size="158672">
+      <assemblyIdentity name="Графопостроитель" version="1.0.0.0" language="neutral" processorArchitecture="msil" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+        <dsig:DigestValue>mBhQ8Vtzn/+cZnwExMJdW24o9fuRVTFUQfuB5tesG6c=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <file name="stocks-graphic-with-a-magnifier-tool_icon-icons.com_70602.ico" size="67646">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>Cffcq8D+1w/cTXIr4yqWL7lOWELHbz+CcY/1ruU71nY=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="Графопостроитель.exe.config" size="189">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>rl5/qDc7Jz+tB+BIbOv9iMGPlRe6YJwrjmU09dnlPcs=</dsig:DigestValue>
+    </hash>
+  </file>
+<publisherIdentity name="CN=admin-pc\admin" issuerKeyHash="7eb25325f95acbc8ee2686fcc7dd32f3c7c77e44" /><Signature Id="StrongNameSignature" xmlns="http://www.w3.org/2000/09/xmldsig#"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /><SignatureMethod Algorithm="http://www.w3.org/2000/09/xmldsig#rsa-sha256" /><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature" /><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /></Transforms><DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" /><DigestValue>i1avTlQmN4A6NdgUri4lb6HWW6zgkfiNTQslycJHyvk=</DigestValue></Reference></SignedInfo><SignatureValue>Fzgv4TPCQCDv4+R3dS6GOpur6Q8JTNQuOYOHJdkEYk8Lg1t6jFhyCSSDaRsxwSnslQDhF9b8owxXRFlpbE3pa9rxnX7AcgByRSnnty+yzR2+hIhYYkEB0VuMKyc+zqNIUi8RhCl2uoNyL5JPrRNJnhEMZwR7i7QY1n0HTrtMwJ8=</SignatureValue><KeyInfo Id="StrongNameKeyInfo"><KeyValue><RSAKeyValue><Modulus>rNS1zI9nsCtn1Raurj7UrrfriWHnFJKYr8gpxseOO9hLYqc3TRPD8dG1LJZXp2vj8FAVrkeL0rfFX/kaBAYzLAmPPNMN/LdgElP5iomh9BMCnGkbHPV2vfwW3cUkK6DTyxvoRsCuHKJrBa34ix/KiTYV1goGnRDj9OG/ynl3MAE=</Modulus><Exponent>AQAB</Exponent></RSAKeyValue></KeyValue><msrel:RelData xmlns:msrel="http://schemas.microsoft.com/windows/rel/2005/reldata"><r:license xmlns:r="urn:mpeg:mpeg21:2003:01-REL-R-NS" xmlns:as="http://schemas.microsoft.com/windows/pki/2005/Authenticode"><r:grant><as:ManifestInformation Hash="f9ca47c2c9250b4d8df891e0ac5bd6a16f252eae14d8353a803726544eaf568b" Description="" Url=""><as:assemblyIdentity name="Графопостроитель.exe" version="1.0.0.0" publicKeyToken="1b69d90a52063844" language="neutral" processorArchitecture="msil" type="win32" /></as:ManifestInformation><as:SignedBy /><as:AuthenticodePublisher><as:X509SubjectName>CN=admin-pc\admin</as:X509SubjectName></as:AuthenticodePublisher></r:grant><r:issuer><Signature Id="AuthenticodeSignature" xmlns="http://www.w3.org/2000/09/xmldsig#"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /><SignatureMethod Algorithm="http://www.w3.org/2000/09/xmldsig#rsa-sha256" /><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature" /><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /></Transforms><DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" /><DigestValue>Gt5i1cw2qu60AKLOwrI3DtVgxOaNTn2yDFmu3n76w7E=</DigestValue></Reference></SignedInfo><SignatureValue>Tp/XtpC1woWdUMamUHdM14DECKSejpJhKFJf6fb61W2c+Eqw2JUa87QQIM4mPqx60OfKk+cSKOkJEuLkW7phSV7O9ZeypSmNsel+v9hjHaWSXhLs/BgOLG5ZSZ0u2fPPOBpRcYeWShmfCMiNWZrsJkTSaXnz1IPYeLFJOPOBgtk=</SignatureValue><KeyInfo><KeyValue><RSAKeyValue><Modulus>rNS1zI9nsCtn1Raurj7UrrfriWHnFJKYr8gpxseOO9hLYqc3TRPD8dG1LJZXp2vj8FAVrkeL0rfFX/kaBAYzLAmPPNMN/LdgElP5iomh9BMCnGkbHPV2vfwW3cUkK6DTyxvoRsCuHKJrBa34ix/KiTYV1goGnRDj9OG/ynl3MAE=</Modulus><Exponent>AQAB</Exponent></RSAKeyValue></KeyValue><X509Data><X509Certificate>MIIB0TCCATqgAwIBAgIQb77Z+sTRorlNgiZJmTNp2zANBgkqhkiG9w0BAQsFADAnMSUwIwYDVQQDHhwAYQBkAG0AaQBuAC0AcABjAFwAYQBkAG0AaQBuMB4XDTE5MDUyNzE4NDQ0M1oXDTIwMDUyNzAwNDQ0M1owJzElMCMGA1UEAx4cAGEAZABtAGkAbgAtAHAAYwBcAGEAZABtAGkAbjCBnzANBgkqhkiG9w0BAQEFAAOBjQAwgYkCgYEArNS1zI9nsCtn1Raurj7UrrfriWHnFJKYr8gpxseOO9hLYqc3TRPD8dG1LJZXp2vj8FAVrkeL0rfFX/kaBAYzLAmPPNMN/LdgElP5iomh9BMCnGkbHPV2vfwW3cUkK6DTyxvoRsCuHKJrBa34ix/KiTYV1goGnRDj9OG/ynl3MAECAwEAATANBgkqhkiG9w0BAQsFAAOBgQBt06t7t/ZKR042r1rqvpEisjFxuPd7dmTpYjC8tBzwlwIZ7PQWrl3JhKl4H3KRXmT2qQvPEu4hHIs20jnDniTvJgqbtT2/GfhO5JljU7kO7Nb6B0FF97YPayMf4LpUUcXzsczTK71M6IZDfgJGuPEQvIwPpy1cSepPRYFxwFEICQ==</X509Certificate></X509Data></KeyInfo></Signature></r:issuer></r:license></msrel:RelData></KeyInfo></Signature></asmv1:assembly>

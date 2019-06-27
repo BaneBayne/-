@@ -1,0 +1,16 @@
+c:\users\admin\source\repos\Графопостроитель\Графопостроитель\bin\Debug\ZedGraph.dll
+c:\users\admin\source\repos\Графопостроитель\Графопостроитель\obj\Debug\Графопостроитель.csprojAssemblyReference.cache
+c:\users\admin\source\repos\Графопостроитель\Графопостроитель\obj\Debug\Графопостроитель.Form1.resources
+c:\users\admin\source\repos\Графопостроитель\Графопостроитель\obj\Debug\Графопостроитель.csproj.GenerateResource.cache
+c:\users\admin\source\repos\Графопостроитель\Графопостроитель\obj\Debug\Графопостроитель.csproj.CoreCompileInputs.cache
+c:\users\admin\source\repos\Графопостроитель\Графопостроитель\obj\Debug\Графопостроитель.csproj.CopyComplete
+C:\Users\admin\source\repos\Графопостроитель\Графопостроитель\bin\Debug\Графострой.exe.config
+C:\Users\admin\source\repos\Графопостроитель\Графопостроитель\bin\Debug\Графострой.exe.manifest
+C:\Users\admin\source\repos\Графопостроитель\Графопостроитель\bin\Debug\Графострой.application
+C:\Users\admin\source\repos\Графопостроитель\Графопостроитель\bin\Debug\Графострой.exe
+C:\Users\admin\source\repos\Графопостроитель\Графопостроитель\bin\Debug\Графострой.pdb
+C:\Users\admin\source\repos\Графопостроитель\Графопостроитель\obj\Debug\Графострой.Properties.Resources.resources
+C:\Users\admin\source\repos\Графопостроитель\Графопостроитель\obj\Debug\Графострой.exe.manifest
+C:\Users\admin\source\repos\Графопостроитель\Графопостроитель\obj\Debug\Графострой.application
+C:\Users\admin\source\repos\Графопостроитель\Графопостроитель\obj\Debug\Графострой.exe
+C:\Users\admin\source\repos\Графопостроитель\Графопостроитель\obj\Debug\Графострой.pdb
